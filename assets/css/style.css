@@ -2089,3 +2089,7 @@ textarea.form-input::-webkit-resizer {
 .mt-3 {
   margin-top: 30px;
 }
+
+.active-color {
+    color: var(--theme-active-color);
+}
