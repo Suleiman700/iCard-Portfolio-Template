@@ -157,22 +157,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-
-
-// set links
-const email = 'soleman630@gmail.com'
-const phone = '+12133522795'
-const facebook = 'https://www.facebook.com/xSuleimanx/'
-const github = 'https://github.com/Suleiman700'
-const linkedin = 'https://www.linkedin.com/in/suleiman-jaber/'
-
-
-document.querySelector('#sidebar-email').setAttribute('href', `mailto:${email}`)
-document.querySelector('#sidebar-email').innerText = email
-
-document.querySelector('#sidebar-phone').setAttribute('href', `tel:${phone}`)
-document.querySelector('#sidebar-phone').innerText = phone
-
-document.querySelector('#facebook-link').setAttribute('href', facebook)
-document.querySelector('#github-link').setAttribute('href', github)
-document.querySelector('#linkedin-link').setAttribute('href', linkedin)
