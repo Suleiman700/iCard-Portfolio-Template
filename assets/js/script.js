@@ -135,6 +135,22 @@ for (let i = 0; i < formInputs.length; i++) {
     });
 }
 
+// on contact form submit
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    // show submit div
+    const submitDiv = document.querySelector('#form-submit-info')
+    submitDiv.style.display = 'block'
+
+    // set fullname
+    submitDiv.querySelector(`#submit-fullname`).innerText = form.querySelector('[name="fullname"]').value
+    // set email
+    submitDiv.querySelector(`#submit-email`).innerText = form.querySelector('[name="email"]').value
+    // set message
+    submitDiv.querySelector(`#submit-message`).innerText = form.querySelector('[name="message"]').value
+})
+
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
