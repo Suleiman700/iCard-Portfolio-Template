@@ -143,12 +143,16 @@ form.addEventListener('submit', (event) => {
     const submitDiv = document.querySelector('#form-submit-info')
     submitDiv.style.display = 'block'
 
+    const fullname = form.querySelector('[name="fullname"]').value
+    const email = form.querySelector('[name="email"]').value
+    const message = form.querySelector('[name="message"]').value
+
     // set fullname
-    submitDiv.querySelector(`#submit-fullname`).innerText = form.querySelector('[name="fullname"]').value
+    submitDiv.querySelector(`#submit-fullname`).innerText = fullname
     // set email
-    submitDiv.querySelector(`#submit-email`).innerText = form.querySelector('[name="email"]').value
+    submitDiv.querySelector(`#submit-email`).innerText = email
     // set message
-    submitDiv.querySelector(`#submit-message`).innerText = form.querySelector('[name="message"]').value
+    submitDiv.querySelector(`#submit-message`).innerText = message
 })
 
 
