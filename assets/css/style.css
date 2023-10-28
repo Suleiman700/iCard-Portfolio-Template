@@ -1621,7 +1621,7 @@ textarea.form-input::-webkit-resizer {
 
     /* clients */
     .clients-list {
-        gap: 50px;
+        /*gap: 50px;*/
         margin: 0 -30px;
         padding: 45px;
         scroll-padding-inline: 45px;
@@ -1719,6 +1719,8 @@ textarea.form-input::-webkit-resizer {
     .has-scrollbar::-webkit-scrollbar-button {
         width: 100px;
     }
+
+
 
 
     /**
@@ -1947,6 +1949,10 @@ textarea.form-input::-webkit-resizer {
 
     body::-webkit-scrollbar-button {
         height: 60px;
+    }
+
+    ::-webkit-scrollbar{
+        height: 20px !important;
     }
 
 

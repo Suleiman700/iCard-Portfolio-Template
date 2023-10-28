@@ -33,11 +33,12 @@
         <!-- sidebar -->
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img alt="Richard hanrick" src="./assets/images/avatars/my-avatar.png" width="80">
+                <figure class="avatar-boxx">
+                    <img alt="Richard hanrick" class="rounded-circle border" src="https://media.licdn.com/dms/image/D4D03AQFLzguqAgHpsQ/profile-displayphoto-shrink_800_800/0/1690888425359?e=1703721600&v=beta&t=RJUXHIDKi4_jFQ9qgYfVz6CeLyeInC9cJRe96lWzpQM" width="120">
+<!--                    <img alt="Richard hanrick" src="./assets/images/avatars/my-avatar.png" width="80">-->
                 </figure>
                 <div class="info-content">
-                    <h1 class="name">John Doe</h1>
+                    <h1 class="name">Suleiman Jaber</h1>
                     <p class="title">Full Stack Developer</p>
                     <p class="title theme-btn-text-color cursor-pointer" id="open-theme-settings" style="margin-top: 5px;">
                         <i class="fa fa-gears"></i> Theme</p>
@@ -58,7 +59,7 @@
                         </div>
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
-                            <a class="contact-link" href="mailto:email@domain.com" id="sidebar-email">email@domain.com</a>
+                            <a class="contact-link" href="mailto:soleman630@gmail.com" id="sidebar-email">soleman630@gmail.com</a>
                         </div>
                     </li>
 
@@ -68,17 +69,24 @@
                         </div>
                         <div class="contact-info">
                             <p class="contact-title">Phone</p>
-                            <a class="contact-link" href="tel:+12133522795" id="sidebar-phone">+1 (213) 352-2795</a>
+                            <a class="contact-link" href="javascript:void(0)" id="sidebar-phone">Available on request</a>
                         </div>
                     </li>
 
                     <li class="contact-item">
                         <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
+                            <ion-icon name="briefcase-outline"></ion-icon>
                         </div>
                         <div class="contact-info">
-                            <p class="contact-title">Age</p>
-                            <time datetime="1982-06-23">26 Years Old</time>
+                            <p class="contact-title">Years Of Experince</p>
+                            <a class="contact-link" href="javascript:void(0)" id="years-of-experience">-</a>
+                            <script>
+                                // Calculate the number of years of experience
+                                const yearsOfExperience = new Date().getFullYear() - 2019;
+
+                                // Set the content of the anchor tag to display the result
+                                document.getElementById('years-of-experience').textContent = yearsOfExperience + ' Years';
+                            </script>
                         </div>
                     </li>
 
@@ -88,7 +96,7 @@
                         </div>
                         <div class="contact-info">
                             <p class="contact-title">Location</p>
-                            <address>Sacramento, California, USA</address>
+                            <address>Tiberias, Israel</address>
                         </div>
                     </li>
                 </ul>
@@ -98,13 +106,7 @@
                 <ul class="social-list">
 
                     <li class="social-item">
-                        <a class="social-link" href="#" target="_blank">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a class="social-link" href="#" target="_blank">
+                        <a class="social-link" href="https://www.linkedin.com/in/suleiman-jaber/" target="_blank">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
@@ -169,20 +171,15 @@
 
                 <section class="about-text">
                     <p>
-                        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and
-                        print media.
-                        I enjoy
-                        turning complex problems into simple, beautiful and intuitive designs.
+                        I'm an experienced Full Stack Developer, specializing in web development and software engineering, dedicated to transforming complex technical challenges into elegant, efficient solutions.
                     </p>
 
                     <p>
-                        My job is to build your website so that it is functional and user-friendly but at the same time
-                        attractive.
-                        Moreover, I
-                        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to
-                        bring
-                        across your
-                        message and identity in the most creative way. I created web design for many famous brand companies.
+                        My role involves crafting highly functional and user-friendly websites and applications. I strive to seamlessly blend functionality with aesthetics, ensuring your digital products are not only visually appealing but also intuitive to navigate, all while effectively conveying your brand's message and identity.
+                    </p>
+
+                    <p>
+                        Throughout my career, I've had the privilege of working with renowned brands and companies to develop comprehensive web and software solutions. My commitment to excellence and versatility in full stack development enables me to consistently deliver cutting-edge, dynamic, and user-centric applications that exceed expectations.
                     </p>
                 </section>
 
@@ -225,7 +222,7 @@
                                 <h4 class="h4 service-item-title">Web development</h4>
 
                                 <p class="service-item-text">
-                                    High-quality development of sites at the professional level.
+                                    High-quality development of sites, applications and servers at the professional level.
                                 </p>
                             </div>
 
@@ -234,15 +231,14 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img alt="mobile app icon" class="theme-icon-color" src="./assets/images/icons/icon-app.svg"
-                                     width="40">
+                                <img alt="mobile app icon" class="theme-icon-color" src="./assets/images/icons/icon-product-life-cycle.svg" width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Mobile apps</h4>
+                                <h4 class="h4 service-item-title">Product Development Lifecycle</h4>
 
                                 <p class="service-item-text">
-                                    Professional development of applications for iOS and Android.
+                                    Guiding the full product development lifecycle, from idea to a user-ready solution.
                                 </p>
                             </div>
 
@@ -251,15 +247,15 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img alt="camera icon" class="theme-icon-color" src="./assets/images/icons/icon-photo.svg"
+                                <img alt="camera icon" class="theme-icon-color" src="./assets/images/icons/icon-document.svg"
                                      width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Photography</h4>
+                                <h4 class="h4 service-item-title">Documentation</h4>
 
                                 <p class="service-item-text">
-                                    I make high-quality photos of any category at a professional level.
+                                    Created and maintained comprehensive documentation for project roadmaps and technical specifications.
                                 </p>
                             </div>
 
@@ -274,7 +270,7 @@
                   - testimonials
                 -->
 
-                <section class="testimonials">
+                <section class="testimonials" hidden="">
 
                     <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -439,46 +435,43 @@
 
                 <section class="clients">
 
-                    <h3 class="h3 clients-title">Clients</h3>
+                    <h3 class="h3 clients-title">Tech-Stack</h3>
 
-                    <ul class="clients-list has-scrollbar">
-
-                        <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-1-color.png">
-                            </a>
-                        </li>
+                    <ul class="clients-list has-scrollbar" style="display: flex; align-items: center;">
 
                         <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-2-color.png">
-                            </a>
+                            <img alt="client logo" src="./assets/images/tech-stack/java.png" style="width: 100px !important;">
                         </li>
-
                         <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-3-color.png">
-                            </a>
+                            <img alt="client logo" src="./assets/images/tech-stack/nodejs.png" style="width: 100px !important;">
                         </li>
-
                         <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-4-color.png">
-                            </a>
+                            <img alt="client logo" src="./assets/images/tech-stack/php.png" style="width: 100px !important;">
                         </li>
-
                         <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-5-color.png">
-                            </a>
+                            <img alt="client logo" src="./assets/images/tech-stack/reactjs.png" style="width: 60px !important;">
                         </li>
-
                         <li class="clients-item">
-                            <a href="#">
-                                <img alt="client logo" src="./assets/images/logos/logo-6-color.png">
-                            </a>
+                            <img alt="client logo" src="./assets/images/tech-stack/javascript.png" style="width: 60px !important;">
+                        </li>
+                        <li class="clients-item">
+                            <img alt="client logo" src="./assets/images/tech-stack/mysql.png" style="width: 100px !important;">
+                        </li>
+                        <li class="clients-item">
+                            <img alt="client logo" src="./assets/images/tech-stack/bootstrap.png" style="width: 100px !important;">
+                        </li>
+                        <li class="clients-item">
+                            <img alt="client logo" src="./assets/images/tech-stack/docker.png" style="width: 100px !important;">
+                        </li>
+                        <li class="clients-item">
+                            <img alt="client logo" src="./assets/images/tech-stack/linux.png" style="width: 100px !important;">
                         </li>
 
+                        <li class="clients-item" hidden="hidden">
+                            <a href="#">
+                                <img alt="client logo" src="./assets/images/logos/logo-2-color.png" style="width: 100px !important;">
+                            </a>
+                        </li>
                     </ul>
 
                 </section>
