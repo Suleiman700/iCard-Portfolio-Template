@@ -343,7 +343,7 @@ main {
 
 .sidebar {
     margin-bottom: 15px;
-    max-height: 112px;
+    max-height: 150px;
     overflow: hidden;
     transition: var(--transition-2);
 }
@@ -1933,6 +1933,10 @@ textarea.form-input::-webkit-resizer {
     body::-webkit-scrollbar-track {
         /*background: var(--smoky-black);*/
         background: var(--active-theme);
+    }
+
+    .modal-content {
+        background: var(--eerie-black-2);
     }
 
     body::-webkit-scrollbar-thumb {

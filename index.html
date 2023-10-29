@@ -78,7 +78,7 @@
                             <ion-icon name="briefcase-outline"></ion-icon>
                         </div>
                         <div class="contact-info">
-                            <p class="contact-title">Years Of Experince</p>
+                            <p class="contact-title">Experience</p>
                             <a class="contact-link" href="javascript:void(0)" id="years-of-experience">-</a>
                             <script>
                                 // Calculate the number of years of experience
@@ -163,7 +163,7 @@
               - #ABOUT
             -->
 
-            <article class="about active" data-page="about">
+            <article class="about" data-page="about">
 
                 <header>
                     <h2 class="h2 article-title">About me</h2>
@@ -676,24 +676,24 @@
 
 
             <!-- PORTFOLIO -->
-            <article class="portfolio" data-page="portfolio">
+            <article class="portfolio active" data-page="portfolio">
                 <header>
                     <h2 class="h2 article-title">Portfolio</h2>
                 </header>
                 <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <button class="active" data-filter-btn>All</button>
-                        </li>
-                        <li class="filter-item">
-                            <button data-filter-btn>Web design</button>
-                        </li>
-                        <li class="filter-item">
-                            <button data-filter-btn>Applications</button>
-                        </li>
-                        <li class="filter-item">
-                            <button data-filter-btn>Web development</button>
-                        </li>
+                    <ul class="filter-list" id="normal-filter-buttons-div">
+<!--                        <li class="filter-item">-->
+<!--                            <button class="active" data-filter-btn>All</button>-->
+<!--                        </li>-->
+<!--                        <li class="filter-item">-->
+<!--                            <button data-filter-btn>Web design</button>-->
+<!--                        </li>-->
+<!--                        <li class="filter-item">-->
+<!--                            <button data-filter-btn>Applications</button>-->
+<!--                        </li>-->
+<!--                        <li class="filter-item">-->
+<!--                            <button data-filter-btn>Web development</button>-->
+<!--                        </li>-->
                     </ul>
 
                     <div class="filter-select-box">
@@ -703,24 +703,119 @@
                                 <ion-icon name="chevron-down"></ion-icon>
                             </div>
                         </button>
-                        <ul class="select-list">
-                            <li class="select-item">
-                                <button data-select-item>All</button>
-                            </li>
-                            <li class="select-item">
-                                <button data-select-item>Web design</button>
-                            </li>
-                            <li class="select-item">
-                                <button data-select-item>Applications</button>
-                            </li>
-                            <li class="select-item">
-                                <button data-select-item>Web development</button>
-                            </li>
+                        <ul class="select-list" id="small-filter-buttons-div">
+<!--                            <li class="select-item">-->
+<!--                                <button data-select-item>All</button>-->
+<!--                            </li>-->
+<!--                            <li class="select-item">-->
+<!--                                <button data-select-item>Web design</button>-->
+<!--                            </li>-->
+<!--                            <li class="select-item">-->
+<!--                                <button data-select-item>Applications</button>-->
+<!--                            </li>-->
+<!--                            <li class="select-item">-->
+<!--                                <button data-select-item>Web development</button>-->
+<!--                            </li>-->
                         </ul>
-
                     </div>
 
-                    <ul class="project-list">
+                    <ul class="project-list" id="projects-list">
+                        <script type="module">
+                            import ModalProjectDetails from './assets/js/classes/ModalProjectDetails.js';
+                            let allProjects = []
+                            const allTags = [];
+                            const filterList = document.querySelector('.filter-list');
+                            const selectList = document.querySelector('.select-list');
+
+                            function buildProjectsList(_projects) {
+                                const projectList = document.getElementById('projects-list');
+                                projectList.innerHTML = ''
+
+                                _projects.forEach((project) => {
+                                    const tags = project.tags.split(',').map(tag => tag.charAt(0).toUpperCase() + tag.slice(1).trim());
+                                    tags.forEach(tag => {
+                                        // Add project tag into array if not found
+                                        if (!allTags.includes(tag)) allTags.push(tag)
+                                    })
+                                    const projectDiv = document.createElement('div');
+                                    projectDiv.innerHTML = `
+                                            <li class="project-item active" data-category="${tags[0]}" data-filter-item>
+                                                <a href="javascript:void(0)">
+                                                    <figure class="project-img" style="height: 200px;">
+                                                        <div class="project-item-icon-box">
+                                                            <ion-icon name="eye-outline"></ion-icon>
+                                                        </div>
+                                                        <img alt="${project.title}" loading="lazy" src="${project.image}">
+                                                    </figure>
+                                                    <h3 class="project-title">${project.title}</h3>
+                                                    <p class="project-category">${tags.join(', ')}</p>
+                                                </a>
+                                            </li>
+                                        `;
+
+                                    projectDiv.querySelector('a').addEventListener('click', () => {
+                                        ModalProjectDetails.setTitle(project.title)
+                                        ModalProjectDetails.setShortDescription(project.short_description)
+                                        ModalProjectDetails.setLongDescription(project.long_description)
+                                        ModalProjectDetails.setTryButtonLink(project.try_link)
+                                        ModalProjectDetails.setSourceCodeButtonLink(project.source_code_link)
+                                        ModalProjectDetails.setImage(project.image)
+                                        ModalProjectDetails.setShown(true)
+                                    })
+
+                                    projectList.appendChild(projectDiv);
+                                });
+                            }
+
+                            function buildTagsButtons() {
+                                // Generate filter buttons for both views (full-width and mobile)
+                                allTags.unshift('All'); // Include an 'All' button
+                                allTags.forEach(tag => {
+                                    document.querySelector('#normal-filter-buttons-div').innerHTML += `
+                                        <li class="filter-item">
+                                            <button data-filter-btn>${tag}</button>
+                                        </li>
+                                    `
+                                    document.querySelector('#small-filter-buttons-div').innerHTML += `
+                                        <li class="select-item">
+                                            <button data-filter-btn>${tag}</button>
+                                        </li>
+                                    `
+
+                                    const filterButtons = document.querySelectorAll('button[data-filter-btn]')
+                                    filterButtons.forEach(filterButton => {
+                                        filterButton.addEventListener('click', () => {
+                                            const tag = filterButton.innerHTML // E.g. Plugin
+
+                                            if (tag.toLowerCase() !== 'all') {
+                                                // Get all projects that has this tag
+                                                const filteredProjects = allProjects.filter(project => project.tags.toLowerCase().includes(tag.toLocaleLowerCase()))
+
+                                                // Rebuild projects list
+                                                buildProjectsList(filteredProjects)
+                                            }
+                                            else {
+                                                buildProjectsList(allProjects)
+                                            }
+
+                                            document.querySelector('button.filter-select').classList.remove('active')
+
+                                        })
+                                    })
+                                });
+                            }
+
+                            await fetch('./assets/data/projects.json')
+                                .then(response => response.json())
+                                .then(_projects => {
+                                    allProjects = _projects
+                                });
+                            buildProjectsList(allProjects)
+                            buildTagsButtons()
+                        </script>
+                    </ul>
+
+                    <ul class="project-list" hidden="">
                         <li class="project-item active" data-category="web development" data-filter-item>
                             <a href="#">
                                 <figure class="project-img" data-project-name="Finance">
@@ -1086,7 +1181,31 @@
         </div>
     </main>
 
-  <!-- ionicon link -->
+    <div class="modal fade" id="modal-project-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title theme-btn-text-color" id="project-title">project-title</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <h5 class="mb-4 text-white" id="project-short-description">project-short-description</h5>
+                    <img class="card-img-top mb-3" id="project-image" src="" alt="" style="border-radius: 25px;">
+                    <h6 class="text-white" id="project-long-description">project-long-description</h6>
+                    <hr style="border: 1px solid white;" />
+                    <h4 class="text-white">Links</h4>
+                    <button class="btn btn-success mx-1" id="try-button"><i class="fa fa-eye"></i> Try Now</button>
+                    <button class="btn btn-primary mx-1" id="source-code-button"><i class="fa fa-code"></i> Source Code</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ionicon link -->
   <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

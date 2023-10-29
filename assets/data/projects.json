@@ -1,0 +1,242 @@
+[
+  {
+    "name": "React.js Dota 2 Landing Page",
+    "title": "React.js Dota 2 Landing Page",
+    "short_description": "A beautiful landing page for Fall Guys game.",
+    "long_description": "",
+    "image": "https://github.com/Suleiman700/React.js-Dota-Landing-Page/raw/main/src/assets/images/long-screenshot.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/React.js-Dota-Landing-Page",
+    "tags": "template,app"
+  },
+  {
+    "name": "React.js Fall Guys Landing Page",
+    "title": "React.js Fall Guys Landing Page",
+    "short_description": "A beautiful landing page for Fall Guys game.",
+    "long_description": "",
+    "image": "https://github.com/Suleiman700/ReactJS-Fall-Guys-Landing-Page/raw/main/src/assets/images/img.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/ReactJS-Fall-Guys-Landing-Page",
+    "tags": "template"
+  },
+  {
+    "name": "Next.js Portfolio",
+    "title": "Next.js Portfolio",
+    "short_description": "A simple portfolio starter theme built with Next.js and Tailwind CSS.",
+    "long_description": "",
+    "image": "https://github.com/Suleiman700/NextJS-Portfolio/raw/main/img.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/NextJS-Portfolio",
+    "tags": "template"
+  },
+  {
+    "name": "Fun Run Clone - Phaser 3 Prototype",
+    "title": "Fun Run Clone - Phaser 3 Prototype",
+    "short_description": "Fun Run Game Clone - Phaser 3 Game Prototype",
+    "long_description": "A simple prototype of a \"Fun Run\" clone game developed using Phaser, a popular HTML5 game framework. The game is a 2D platformer where players control a character to navigate obstacles and reach the finish line.",
+    "image": "https://user-images.githubusercontent.com/25286081/270405891-f2db1aa3-1cd9-42ca-8ef2-6ecf3c0d7964.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/Phaser-Fun-Run-Clone",
+    "tags": "game"
+  },
+  {
+    "name": "Bootstrap5 Minimalist Dashboard",
+    "title": "Bootstrap5 Minimalist Dashboard",
+    "short_description": "Bootstrap 5 Minimalist design template for admin dashboard",
+    "long_description": "Minimalist is a minimalist design template for admin dashboard. This is made with all the latest frameworks such as Bootstrap 5, HTML5 & CSS3. This template is SEO-optimized and ranks higher in search engine results. It comes with quicker page loading time and reduces wait time for visitors. The template comes with a well-chosen color scheme and fully responsive UI components laid out on it. Its user-friendly components include 10 HTML pages, 5 UI components, one basic dashboard, a well-commented codebase, an on-hover effect, a burger menu, and many more.",
+    "image": "https://user-images.githubusercontent.com/25286081/273462234-ee75071c-fa25-45b0-afcf-b9110e80cc3f.png",
+    "try_link": "https://wegate.net/projects/Bootstrap5-Minimalist-Admin-Dashboard/",
+    "source_code_link": "https://github.com/Suleiman700/Bootstrap5-Minimalist-Admin-Dashboard",
+    "tags": "template"
+  },
+  {
+    "name": "React.js Home Repairs Management",
+    "title": "React.js Home Repairs Management",
+    "short_description": "A ReactJS web application to manage all of your home repairs such as: workers, repairs, payments & worklog",
+    "long_description": "Are you ready to simplify your life and stay on top of all your home repair tasks? With the ReactJS Home Repairs Management app, you can effortlessly manage every aspect of your home repairs, all in one place.",
+    "image": "https://github.com/Suleiman700/ReactJS-Home-Repairs-Management/raw/main/imgs/img7.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/ReactJS-Home-Repairs-Management",
+    "tags": "app"
+  },
+  {
+    "name": "React.js Google Keep Clone",
+    "title": "React.js Google Keep Clone",
+    "short_description": "This project is a clone of Google Keep, a note-taking application developed by Google. It was built using React and Material UI",
+    "long_description": "",
+    "image": "https://github.com/Suleiman700/ReactJS-Google-Keep-Clone/blob/main/Preview/preview_3.png?raw=true",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/ReactJS-Google-Keep-Clone",
+    "tags": "app"
+  },
+  {
+    "name": "React.js Chat Application",
+    "title": "React.js Chat Application",
+    "short_description": "ReactJS chat application with websocket & bootstrap - including authentication pages, responsive design & captcha",
+    "long_description": "The app boasts a plethora of functionalities, including one-to-one and group chat, a contact list, file sharing, online user tracking, and message read/unread status. We have also included authentication pages to enhance security. Additionally, our app offers multi-language support through an i18n JSON object, making it accessible to a wider audience.",
+    "image": "https://github.com/Suleiman700/ReactJS-Chat-Application/raw/main/img_2.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/ReactJS-Chat-Application",
+    "tags": "app"
+  },
+  {
+    "name": "PassHub",
+    "title": "PassHub",
+    "short_description": "A password management system",
+    "long_description": "A safe place to place all of your passwords, With encryption and other security methods",
+    "image": "https://user-images.githubusercontent.com/25286081/222756927-0e569df8-d4b9-4633-82d0-f391b86d8840.png",
+    "try_link": "https://wegate.net/projects/passhub/",
+    "source_code_link": "https://github.com/Suleiman700/PassHub",
+    "tags": "app"
+  },
+  {
+    "name": "SuSearch",
+    "title": "SuSearch",
+    "short_description": "A Fuzzy JavaScript Library That Allows You To Search In A Large Amount Of Data",
+    "long_description": "Introducing SuSearch, the JavaScript plugin for fast and efficient fuzzy search in large datasets. With SuSearch, you can easily search based on specific settings and conditions, using a powerful algorithm and a sleek dropdown display of results. SuSearch is the go-to tool for developers who need customizable fuzzy search functionality in their web applications.",
+    "image": "https://s3.envato.com/files/411321868/80x80.png",
+    "try_link": "https://wegate.net/projects/SuSearch/",
+    "source_code_link": "https://github.com/Suleiman700/SuSearch",
+    "tags": "plugin"
+  },
+  {
+    "name": "React.js Movies Platform",
+    "title": "React.js Movies Platform",
+    "short_description": "Online synchronize platform to watch movies with friends",
+    "long_description": "",
+    "image": "https://media0.giphy.com/media/3o6Ztl7RvfwCp9mqhW/giphy.gif?cid=ecf05e472n4g8ehcjseitweuls28zn4b8w4xqcape6ve0mc6&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+    "try_link": "http://194.163.132.253/WatchTogether/",
+    "source_code_link": "https://github.com/Suleiman700/WatchTogetherV2",
+    "tags": "app"
+  },
+  {
+    "name": "React.js Modern Movies Library",
+    "title": "React.js Modern Movies Library",
+    "short_description": "A Modern Movie Library made with React.js using The Movie Database API",
+    "long_description": "",
+    "image": "https://github.com/Suleiman700/Modern-Movies-Library/raw/main/img_3.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/Modern-Movies-Library",
+    "tags": "app"
+  },
+  {
+    "name": "React.js Movies Library",
+    "title": "React.js Movies Library",
+    "short_description": "",
+    "long_description": "React.js app that allows user to browse and search for their favorite movies based on any particular genre like horror, action, mystry, crime.., and much more.",
+    "image": "https://user-images.githubusercontent.com/25286081/214136340-4a3182a8-a1ca-4bbe-8115-1db4d4a5c754.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/MoviesLibrary",
+    "tags": "app"
+  },
+  {
+    "name": "React.js WorkLog",
+    "title": "React.js WorkLog",
+    "short_description": "A simple React.js application to store your work hours.",
+    "long_description": "",
+    "image": "https://user-images.githubusercontent.com/25286081/197308219-df5f9513-5ee8-488a-b27c-c4f606af0a76.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/ReactJS-WorkLog",
+    "tags": "app"
+  },
+  {
+    "name": "Speed Typing",
+    "title": "Speed Typing",
+    "short_description": "A simply JavaScript game to test your typing speed.",
+    "long_description": "This can be a good demo for people who are trying to learn JavaScript :)",
+    "image": "https://user-images.githubusercontent.com/25286081/241394405-4f872779-a8cc-436c-9d3b-372ec5aa2f9b.gif",
+    "try_link": "https://fastidious-druid-a4cf66.netlify.app/",
+    "source_code_link": "https://github.com/Suleiman700/Speed-Typing",
+    "tags": "game"
+  },
+  {
+    "name": "Draw Board",
+    "title": "Draw Board",
+    "short_description": "A drawboard built in JavaScript",
+    "long_description": "",
+    "image": "https://user-images.githubusercontent.com/25286081/241394095-3f36a172-aeb1-4e9f-9a94-b7892ebadb85.gif",
+    "try_link": "https://heroic-croquembouche-3c434b.netlify.app/",
+    "source_code_link": "https://github.com/Suleiman700/DrawBoardJS",
+    "tags": "fun"
+  },
+  {
+    "name": "Multiplayer Zombie Survival 2D",
+    "title": "Multiplayer Zombie Survival 2D",
+    "short_description": "",
+    "long_description": "This is a 2D multiplayer socket-based zombie survival game. It features multiple lobbies, various guns, door mechanics, survival system, and a money system.",
+    "image": "https://user-images.githubusercontent.com/25286081/230240282-306482f3-c6a4-42d2-9c72-67074cb2cb90.gif",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/MultiplayerZombieSurvival2D",
+    "tags": "game"
+  },
+  {
+    "name": "Multiplayer Zombie Survival 3D",
+    "title": "Multiplayer Zombie Survival 3D",
+    "short_description": "A multiplayer zombie web-based game build with BabylonJS.",
+    "long_description": "This project involves creating a first-person shooter game with features such as ammo, weapons, a wall shop, and a money system. The game is currently in progress.",
+    "image": "https://user-images.githubusercontent.com/25286081/235180354-01573ac5-2377-4730-966f-23f905827880.png",
+    "try_link": "http://194.163.132.253/BabylonJSZombieSurvival/client2/",
+    "source_code_link": "https://github.com/Suleiman700/Multiplayer-Zombie-Survival-BabylonJS",
+    "tags": "game"
+  },
+  {
+    "name": "Multiplayer Pixel Fight",
+    "title": "Multiplayer Pixel Fight",
+    "short_description": "A multiplayer pixel fight game built using websockets",
+    "long_description": "",
+    "image": "https://github.com/vinport16/KHE19/raw/master/images/40x40map.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/Multiplayer-Pixel-Fight",
+    "tags": "game"
+  },
+  {
+    "name": "AgaroJS",
+    "title": "AgaroJS",
+    "short_description": "A clone on agar.io built with JavaScript, Socket.IO and P5.js",
+    "long_description": "",
+    "image": "https://user-images.githubusercontent.com/25286081/241395194-f2778044-90f7-491a-becf-9bbfe903662d.gif",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/Agaro.JS",
+    "tags": "game"
+  },
+  {
+    "name": "UCH - ModMenu",
+    "title": "UCH - ModMenu",
+    "short_description": "A great mod menu for ultimate chicken horse game.",
+    "long_description": "",
+    "image": "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGFkYTE4ZjIwOTFlMGU0YjMyMzFlOGJjMmZlZTk5YTg2MDZmODNlMyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/MClNnXC05Wa5ocCNZN/giphy.gif",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/UCH-ModMenu",
+    "tags": "mod"
+  },
+  {
+    "name": "MC - ModMenu",
+    "title": "MC - ModMenu",
+    "short_description": "A simple mod menu for forge 1.19.2 that contains some peaceful mods that can be used (built just for fun).",
+    "long_description": "",
+    "image": "https://user-images.githubusercontent.com/25286081/197092021-66a94ab5-f555-4291-86e5-d114b3811704.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/Forge-Simple-Cheats-Mod-1.19.2",
+    "tags": "mod"
+  },
+  {
+    "name": "SuTables",
+    "title": "SuTables",
+    "short_description": "A modular JavaScript plugin to build tables with ease",
+    "long_description": "",
+    "image": "https://user-images.githubusercontent.com/25286081/255298312-eb3ce85c-c29c-4fec-89fa-05e4392c4467.png",
+    "try_link": "",
+    "source_code_link": "https://github.com/Suleiman700/SuTables",
+    "tags": "plugin"
+  },
+  {
+    "name": "Catering-Elbasha",
+    "title": "Catering-Elbasha",
+    "short_description": "Catering And Restaurant HTML Template",
+    "long_description": "Catering El-Basha is a premium template created for catering services and restaurants. It includes large variety of elements so it can be used for displaying your services and work.",
+    "image": "https://user-images.githubusercontent.com/25286081/257564114-e72ee489-fe50-436e-87de-3842e47efb4d.png",
+    "try_link": "https://wegate.net/projects/templates/catering_elbasha/welcome/",
+    "source_code_link": "https://github.com/Suleiman700/Catering-Elbasha",
+    "tags": "template"
+  }
+]
